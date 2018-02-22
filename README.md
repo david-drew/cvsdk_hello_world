@@ -15,15 +15,15 @@
 
 #### 1. Create the tutorial directory
 
-	mkdir -p /opt/intel/tutorials/cvsdk_hello_world
+	mkdir -p /opt/intel/tutorials
 
 #### 2. Change ownership of the tutorial directory to current user
 
-	sudo chown –R <user.user> /opt/intel/tutorials/cvsdk_hello_world
+	sudo chown –R <user.user> /opt/intel/tutorials
 
 #### 3. Navigate to the new directory
 
-	cd /opt/intel/tutorials/cvsdk_hello_world
+	cd /opt/intel/tutorials
 
 #### 4. Download and clone the tutorial content to the current directory (opt/intel/tutorials/cvsdk_hello_world).
 
@@ -96,7 +96,7 @@ This video in this tutorial prepares you for more difficult deep learning scenar
 
 	sudo apt install python3-pip
 	pip3 install -r requirements_caffe.txt 
-	python3 mo_caffe.py --input_model /opt/intel/tutorials/cvsdk/cvsdk_hello_world/samples/SSD_GoogleNetV2.caffemodel -o /opt/intel/tutorials/cvsdk/cvsdk_hello_world/samples/
+	python3 mo_caffe.py --input_model /opt/intel/tutorials/cvsdk_hello_world/samples/SSD_GoogleNetV2.caffemodel -o /opt/intel/tutorials/cvsdk_hello_world/samples/
 
 The Model Optimizer converts a pretrained Caffe model to be compatible with the Intel Inference Engine and optimizes it for Intel architecture. These are the files you would include with your C++ application to apply inference to visual data.
 	
